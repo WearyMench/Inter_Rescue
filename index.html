@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interdimensional Rescue</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+    <!-- Pixel font for retro style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="gameCanvas"></canvas>
+      <div id="start-screen" class="screen">
+        <h1>Interdimensional Rescue</h1>
+        <button id="start-button">Start Game</button>
+      </div>
+      <div id="game-over-screen" class="screen hidden">
+        <h2>Game Over</h2>
+        <p>Score: <span id="final-score">0</span></p>
+        <p>High Score: <span id="high-score">0</span></p>
+        <button id="restart-button">Play Again</button>
+      </div>
+    </div>
+
+    <!-- Game Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/assets.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/obstacle.js"></script>
+    <script src="js/powerup.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
