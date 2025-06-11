@@ -20,21 +20,7 @@ A 2D endless runner game where you control a flying character through different 
 ## Setup
 
 1. Clone the repository
-2. Create an `assets` folder in the root directory
-3. Add the following image files to the `assets` folder:
-   - player.png (40x40px)
-   - obstacle.png (30x150px)
-   - crystal.png (30x30px)
-   - portal.png (30x30px)
-   - background1.png (800x600px)
-   - background2.png (800x600px)
-   - background3.png (800x600px)
-4. Add the following sound files to the `assets` folder:
-   - jump.mp3
-   - collect.mp3
-   - portal.mp3
-   - gameover.mp3
-5. Open `index.html` in a modern web browser
+2. Open `index.html` in a modern web browser
 
 ## Development
 
