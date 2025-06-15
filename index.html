@@ -16,7 +16,40 @@
     <div id="game-container">
       <canvas id="gameCanvas"></canvas>
       <div id="start-screen" class="screen">
-        <h1>Interdimensional Rescue</h1>
+        <h1 id="game-title">Interdimensional Rescue</h1>
+        <button id="settings-toggle" class="settings-button">
+          <span class="settings-icon">⚙️</span>
+          Settings
+        </button>
+        <div id="settings-container" class="settings-container">
+          <div class="settings-section">
+            <h3>Sound</h3>
+            <div class="setting-item">
+              <label for="sound-toggle">Sound Effects</label>
+              <input type="checkbox" id="sound-toggle" checked />
+            </div>
+          </div>
+
+          <div class="settings-section">
+            <h3>Difficulty</h3>
+            <div class="setting-item">
+              <label for="difficulty">Game Speed</label>
+              <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="normal" selected>Normal</option>
+                <option value="hard">Hard</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="settings-section">
+            <h3>Visual</h3>
+            <div class="setting-item">
+              <label for="particle-effects">Particle Effects</label>
+              <input type="checkbox" id="particle-effects" checked />
+            </div>
+          </div>
+        </div>
         <button id="start-button">Start Game</button>
       </div>
       <div id="game-over-screen" class="screen hidden">
@@ -24,6 +57,7 @@
         <p>Score: <span id="final-score">0</span></p>
         <p>High Score: <span id="high-score">0</span></p>
         <button id="restart-button">Play Again</button>
+        <button id="return-menu-button">Return to Menu</button>
       </div>
     </div>
 
